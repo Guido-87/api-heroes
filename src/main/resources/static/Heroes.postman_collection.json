@@ -1,18 +1,18 @@
 {
 	"info": {
 		"_postman_id": "6800cb87-1118-4444-968e-a8037fdd30b4",
-		"name": "Cash",
+		"name": "Tests",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "User - Create",
+			"name": "Create",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"email\": \"jc@roma.com\",\n    \"firstName\": \"Julio\",\n    \"lastName\": \"Cesar\"\n}",
+					"raw": "{\n    \"email\": \"am@roma.com\",\n    \"firstName\": \"Alejandro\",\n    \"lastName\": \"Magno\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -34,7 +34,7 @@
 			"response": []
 		},
 		{
-			"name": "User - Delete",
+			"name": "Delete",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -45,7 +45,7 @@
 			"response": []
 		},
 		{
-			"name": "Loans - Get By Page, Size and User ID",
+			"name": "Get All",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -56,12 +56,40 @@
 			"response": []
 		},
 		{
-			"name": "User - Get By ID",
+			"name": "Get By Name",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
 					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Spider\",\n    \"power\": 50\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/heroes/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"heroes",
+						"1"
+					]
 				}
 			},
 			"response": []

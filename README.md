@@ -60,7 +60,7 @@ mvn test
 3.- Postman Collection
 
 Postman Collection containing some tests and endpoints can be found in folder:
-src/main/resources
+src/main/resources/static
 
 4.- Debug
 
@@ -70,4 +70,4 @@ mvn spring-boot:run -Drun.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,se
 
 Where PORT_NUMBER is an unused port you choice.
 
-Until today (February 10, 2021) you cant use mvnw for debugging.
+Until today (March 18, 2021) you cant use mvnw for debugging.
